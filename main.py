@@ -1,7 +1,6 @@
 #alt + z
-
-#import pygame
-
+import pygame
+import sys
 #Variabeln
 
 lama_url = "https://212.132.112.15:11434/api/chat"
@@ -39,11 +38,13 @@ data = {
 
 
 # Meine Sachen
-ort="title_screen"
+
 global ort
+ort="title_screen"
 global gespräch
 
-def char_1
+def char_1():
+  g
 
 def gespräch():
   print(1)
@@ -68,10 +69,10 @@ def GoderL():
 while True:
   mouse_x, mouse_y = pygame.mouse.get_pos()
   for event in pygame.event.get():
-      if event.type == QUIT:
+      if event.type == pygame.QUIT:
           pygame.quit()
           sys.exit()
-  Hintergrund()
+  
   pygame.display.update()
 
 def main():
