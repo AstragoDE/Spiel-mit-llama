@@ -38,6 +38,41 @@ data = {
 
 
 
+# Meine Sachen
+ort="title_screen"
+global ort
+global gespräch
+
+def char_1
+
+def gespräch():
+  print(1)
+  
+
+def laufen():
+  if ort == "title_screen":
+    if mouse and mouse:
+      ort = "bedroom_1"
+  if ort == "bedroom_1":
+    if mouse and mouse:
+      ort = "hallway_1"
+      
+
+def GoderL():
+  if gespräch==0:
+    laufen()
+  if gespräch==1:
+    gespräch()
+
+
+while True:
+  mouse_x, mouse_y = pygame.mouse.get_pos()
+  for event in pygame.event.get():
+      if event.type == QUIT:
+          pygame.quit()
+          sys.exit()
+  Hintergrund()
+  pygame.display.update()
 
 def main():
     d
